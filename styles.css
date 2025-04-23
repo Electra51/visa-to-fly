@@ -7,11 +7,13 @@
 body {
   color: #1e1e2f;
 }
-
-/* navbar style start */
 header {
   height: 88px;
   margin-top: 50px;
+}
+.logo img {
+  width: 120px;
+  height: 68px;
 }
 nav {
   max-width: 1170px;
@@ -21,13 +23,16 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.nav_item_for_mobile {
+  display: none;
+}
 .nav_item {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 32px;
 }
-nav ul {
+.nav_item ul {
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -35,18 +40,16 @@ nav ul {
   align-items: center;
   gap: 32px;
 }
-nav ul li {
-  color: #505673;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 140%;
-}
 
 .nav_item ul li a {
   text-decoration: none;
   display: inline-block;
   position: relative;
   transition: color 0.3s;
+  color: #505673;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
 }
 .nav_item ul li.active a::after {
   content: "";
@@ -120,26 +123,22 @@ nav ul li {
   margin-top: 40px;
   margin-bottom: 32px;
 }
-
 .hero_right {
   width: 434px;
   height: 524px;
   border-radius: 16px;
 }
-
 .stats {
   display: flex;
   justify-content: space-around;
   margin-top: 60px;
   gap: 24px;
 }
-
 .stat {
   text-align: center;
   width: 186px;
   height: 67px;
 }
-
 .stat_number {
   display: flex;
   justify-content: flex-start;
@@ -151,10 +150,115 @@ nav ul li {
   font-weight: 300;
   color: #141a33;
 }
-
 .stat_p {
   color: #878ca8;
   font-size: 16px;
   font-weight: 400;
   text-align: start;
+}
+
+/* study destination section */
+
+@media (min-width: 375px) and (max-width: 480px) {
+  header {
+    height: 101px;
+    margin-top: 0;
+    background: #cfdbf9e5;
+  }
+  nav {
+    max-width: 480px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 55px 11px 11px 16px;
+  }
+  .logo img {
+    margin-top: 20px;
+    width: 66px;
+    height: 38px;
+  }
+  .nav_item {
+    display: none;
+  }
+  .nav_item_for_mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav_item_for_mobile svg {
+    cursor: pointer;
+  }
+  .left_background {
+    display: none;
+  }
+  .right_background {
+    display: none;
+  }
+  .hero_right {
+    display: none;
+  }
+  .hero {
+    background-image: url(./images/Hero_for_mobile.png);
+    margin-top: 17px;
+    max-width: 343px;
+    height: 389px;
+    padding: 16px;
+  }
+  .hero_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 325px;
+  }
+  .hero_head_text {
+    margin-top: 18px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero_head_text span {
+    font-size: 29px;
+  }
+  .hero_details {
+    font-size: 14px;
+    margin-top: 12px;
+    width: 292px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .book_btn {
+    height: 40px;
+    width: 161px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .stats {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .stat {
+    text-align: center;
+    width: 81px;
+    height: 53px;
+  }
+  .stat_number {
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .stat_number p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .stat_number svg {
+    height: 16px;
+    width: 15px;
+  }
+  .stat_p {
+    font-size: 12px;
+    text-align: start;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 }
