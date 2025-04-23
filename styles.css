@@ -158,6 +158,230 @@ nav {
 }
 
 /* study destination section */
+.study_destination {
+  max-width: 1170px;
+  margin: 150px auto;
+}
+.study_head_text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #141a33;
+}
+.study_buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.study_btn {
+  box-shadow: 0px 0px 1px 2px #0e228833;
+  box-shadow: 0px 0px 0px 2px #0e228833 inset;
+  box-shadow: 0px -6px 7.1px 0px #0b24a6 inset;
+  height: 41px;
+  width: 106px;
+  background: #3d55cc;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: 1px solid #092ad2;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  text-wrap: nowrap;
+}
+.study_btn2 {
+  height: 41px;
+  width: 106px;
+  background: #ffffff;
+  color: #3d55cc;
+  padding: 10px 16px;
+  border: 1px solid #092ad2;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  text-wrap: nowrap;
+}
+.study_details {
+  margin-top: 40px;
+}
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px); /* Adjust row height as needed */
+  gap: 20px;
+}
+.masonry-item.uk {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3; /* Spans both rows */
+  position: relative;
+  width: 270px;
+  height: 589px;
+}
+.masonry-item.belgium {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  position: relative;
+  width: 270px;
+  height: 279px;
+}
+.masonry-item.nederland {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  position: relative;
+  width: 270px;
+  height: 279px;
+}
+.masonry-item.finland {
+  margin-top: 30px;
+  grid-column: 2 / 4; /* Spans columns 2 and 3 */
+  grid-row: 2 / 3;
+  position: relative;
+  width: 570px;
+  height: 280px;
+}
+.masonry-item.portugal1 {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3; /* Spans both rows */
+  position: relative;
+  width: 270px;
+  height: 589px;
+}
+.study_card_items {
+  background: linear-gradient(
+    358.85deg,
+    #1b1b1b 1.36%,
+    rgba(27, 27, 27, 0.6) 47.91%,
+    rgba(27, 27, 27, 0) 99.39%
+  );
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 19px;
+  padding-bottom: 18px;
+  padding-top: 108px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.study_card_items p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+.study_card_items_button {
+  width: 198px;
+  height: 38px;
+  border: 1px solid #f5f5f5;
+  background: transparent;
+  color: #f5f5f5;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+/* other service section */
+.other_service {
+  margin-top: 200px !important;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.other_service_details {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  width: 370px;
+  height: 276px;
+  border-radius: 20px;
+  border-width: 0.5px;
+  border: 0.5px solid #4261de;
+  padding: 46px 24px;
+  background: #f1f6fd;
+}
+.last-card {
+  width: 370px;
+  height: 276px;
+  border-radius: 20px;
+  border-width: 0.5px;
+  border: 0.5px solid #4261de;
+  padding: 46px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last-card_text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: 0%;
+  text-decoration-thickness: 0%;
+  color: #4261de;
+}
+.card_head_text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #141a33;
+}
+.card_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  color: #505673;
+  margin-top: 30px;
+}
+/* about section */
+.about_section {
+  margin-top: 150px !important;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.about_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 29px;
+  margin-top: 50px;
+}
+.about_left {
+  width: 470px;
+  height: 523px;
+  border-radius: 7px;
+}
+.about_left img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.about_right {
+  width: 670px;
+  height: 523px;
+}
+.about_right_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  color: #505673;
+}
+.about_right_text span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  color: #4261de;
+}
 
 @media (min-width: 375px) and (max-width: 480px) {
   header {
@@ -260,5 +484,194 @@ nav {
     line-height: 140%;
     letter-spacing: 0%;
     text-align: center;
+  }
+  .study_destination {
+    max-width: 343px;
+    /* height: 389px; */
+    margin: 40px auto 0 auto;
+  }
+  .study_head_text {
+    font-size: 30px;
+  }
+  .study_buttons {
+    margin-top: 12px;
+    gap: 16px;
+  }
+  .study_btn {
+    height: 40px;
+    width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .study_btn2 {
+    height: 40px;
+    width: 84px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .study_details {
+    margin-top: 36px;
+  }
+  .masonry-grid {
+    display: block;
+  }
+  .masonry-item.uk {
+    position: relative;
+    width: 343px;
+    height: 221px;
+    object-fit: cover;
+    margin-top: 17px;
+    border-radius: 8px;
+  }
+  .masonry-item.uk img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+  .masonry-item.belgium {
+    position: relative;
+    width: 343px;
+    height: 221px;
+    margin-top: 17px;
+    border-radius: 8px;
+  }
+  .masonry-item.belgium img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+  .masonry-item.nederland {
+    position: relative;
+    width: 343px;
+    height: 221px;
+    margin-top: 17px;
+    border-radius: 8px;
+  }
+  .masonry-item.nederland img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+  .masonry-item.finland {
+    position: relative;
+    width: 343px;
+    height: 221px;
+    margin-top: 17px;
+    border-radius: 8px;
+  }
+  .masonry-item.finland img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+  .masonry-item.portugal1 {
+    position: relative;
+    width: 343px;
+    height: 221px;
+    margin-top: 17px;
+    border-radius: 8px;
+  }
+  .masonry-item.portugal1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+  }
+  .study_card_items {
+    width: 343px;
+    height: 220px;
+    background: linear-gradient(
+      358.85deg,
+      #1b1b1b 1.36%,
+      rgba(27, 27, 27, 0.6) 47.91%,
+      rgba(27, 27, 27, 0) 99.39%
+    );
+    position: absolute;
+    left: 0;
+    bottom: 5;
+    padding-left: 19px;
+    padding-bottom: 18px;
+    padding-top: 80px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  .study_card_items_button {
+    width: 130px;
+    height: 40px;
+    color: #f5f5f5;
+    font-size: 14px;
+    margin-top: 12px;
+    border-radius: 4px;
+  }
+  .other_service {
+    margin-top: 40px !important;
+    max-width: 343px;
+    margin: 0 auto;
+  }
+  .other_service_details {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
+  }
+  .card {
+    width: 166px;
+    height: 220px;
+    border-radius: 20px;
+    border-width: 0.5px;
+    padding: 18px 10px;
+  }
+  .last-card {
+    width: 166px;
+    height: 220px;
+  }
+  .last-card_text {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
+  .card_head_text {
+    font-size: 20px;
+  }
+  .card_text {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .about_section {
+    margin-top: 40px !important;
+    max-width: 343px;
+    margin: 0 auto;
+  }
+  .about_details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    gap: 16px;
+  }
+  .about_right {
+    width: 344px;
+    height: 382px;
+  }
+  .about_left {
+    width: 344px;
+    height: 382px;
+    border-radius: 7px;
+  }
+  .about_left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
