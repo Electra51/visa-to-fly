@@ -25,12 +25,123 @@
             <li class="active">
               <a href="/">Home</a>
             </li>
-            <li>
-              <a href="#">Study Destination</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-a"
+                >Study Destination
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.625 8L10.625 13L15.625 8"
+                    stroke="#505673"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="dropdown_menu">
+                <div class="column">
+                  <h4>Countries</h4>
+                  <a href="#">Study in UK</a>
+                  <a href="#">Study in Belgium</a>
+                  <a href="#">Study in Nederland</a>
+                  <a href="#">Study in Finland</a>
+                  <a href="#">Study in Portugal</a>
+                </div>
+
+                <div class="column">
+                  <h4>Subjects</h4>
+                  <a href="#">Business Studies</a>
+                  <a href="#">Accounting</a>
+                  <a href="#">Engineering</a>
+                  <a href="#">CSE</a>
+                  <a href="#">Mechanical Engineering</a>
+                </div>
+              </div>
             </li>
-            <li><a href="#">Institutions</a></li>
-            <li><a href="#">Immigration</a></li>
-            <li><a href="#">Resources</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-a" href="#"
+                >Institutions
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.625 8L10.625 13L15.625 8"
+                    stroke="#505673"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="dropdown_menu_list">
+                <div class="dropdown-list">
+                  <h4>Countries</h4>
+                  <a href="#">Global Reach</a>
+                  <a href="#">Scholarships</a>
+                  <a href="#">Benefits of Studying Abroad</a>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-a" href="#"
+                >Immigration
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.625 8L10.625 13L15.625 8"
+                    stroke="#505673"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="dropdown_menu_list">
+                <div class="dropdown-list">
+                  <h4>Countries</h4>
+                  <a href="#">Skill Migration</a>
+                  <a href="#">Business Migration</a>
+                  <a href="#">Permanent Resident/PR</a>
+                  <a href="#">Programs</a>
+                  <a href="#">Immigration Destination</a>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-a" href="#"
+                >Resources
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.625 8L10.625 13L15.625 8"
+                    stroke="#505673"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="dropdown_menu_list">
+                <div class="dropdown-list">
+                  <h4>Countries</h4>
+                  <a href="./blogs.html">Blogs</a>
+                  <a href="#">Events</a>
+                </div>
+              </div>
+            </li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#">About Us</a></li>
           </ul>
@@ -198,54 +309,110 @@
       <div class="study_content">
         <h2 class="study_head_text">Study Destination</h2>
         <div class="study_buttons">
-          <button class="study_btn">Countries</button>
-          <button class="study_btn2">Courses</button>
+          <button class="study_btn" id="countriesBtn">Countries</button>
+          <button class="study_btn2" id="coursesBtn">Courses</button>
         </div>
-        <div class="study_details">
-          <div class="masonry-grid">
-            <div class="masonry-item uk">
-              <img src="./images/1.png" alt="UK" />
-              <div class="study_card_items">
-                <p>Study in <br />UK</p>
-                <a href="study_destination_details.html">
-                  <button class="study_card_items_button">VIEW</button></a
-                >
+        <div>
+          <div id="countriesContent" class="study_details tab-content active">
+            <div class="masonry-grid">
+              <div class="masonry-item uk">
+                <img src="./images/1.png" alt="UK" />
+                <div class="study_card_items">
+                  <p>Study in <br />UK</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
+              </div>
+              <div class="masonry-item belgium">
+                <img src="./images/2.png" alt="Belgium" />
+                <div class="study_card_items">
+                  <p>Study in <br />Belgium</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
+              </div>
+              <div class="masonry-item nederland">
+                <img src="./images/3.png" alt="Nederland" />
+                <div class="study_card_items">
+                  <p>Study in <br />Nederland</p>
+                  <a href="./study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
+              </div>
+              <div class="masonry-item finland">
+                <img src="./images/5.png" alt=" Finland" />
+                <div class="study_card_items">
+                  <p>Study in <br />Finland</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
+              </div>
+              <div class="masonry-item portugal1">
+                <img src="./images/4.png" alt="portugal1" />
+                <div class="study_card_items">
+                  <p>Study in <br />Portugal</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
               </div>
             </div>
-            <div class="masonry-item belgium">
-              <img src="./images/2.png" alt="Belgium" />
-              <div class="study_card_items">
-                <p>Study in <br />Belgium</p>
-                <a href="study_destination_details.html">
-                  <button class="study_card_items_button">VIEW</button></a
-                >
+          </div>
+
+          <div id="coursesContent" class="study_details tab-content">
+            <div class="masonry-grid">
+              <div class="masonry-item uk">
+                <img src="./images/courses_img/studies.png" alt="UK" />
+                <div class="study_card_items">
+                  <p>Business Studies</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="masonry-item nederland">
-              <img src="./images/3.png" alt="Nederland" />
-              <div class="study_card_items">
-                <p>Study in <br />Nederland</p>
-                <a href="/study_destination_details.html">
-                  <button class="study_card_items_button">VIEW</button></a
-                >
+              <div class="masonry-item belgium">
+                <img src="./images/courses_img/accounting.png" alt="Belgium" />
+                <div class="study_card_items">
+                  <p>Accounting</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="masonry-item finland">
-              <img src="./images/5.png" alt=" Finland" />
-              <div class="study_card_items">
-                <p>Study in <br />Finland</p>
-                <a href="/study_destination_details.html">
-                  <button class="study_card_items_button">VIEW</button></a
-                >
+              <div class="masonry-item nederland">
+                <img src="./images/courses_img/cse.png" alt="Nederland" />
+                <div class="study_card_items">
+                  <p>CSE</p>
+                  <a href="./study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="masonry-item portugal1">
-              <img src="./images/4.png" alt="portugal1" />
-              <div class="study_card_items">
-                <p>Study in <br />Portugal</p>
-                <a href="/study_destination_details.html">
-                  <button class="study_card_items_button">VIEW</button></a
-                >
+              <div class="masonry-item finland">
+                <img
+                  src="./images/courses_img/engineering.png"
+                  alt=" Finland" />
+                <div class="study_card_items">
+                  <p>Engineering</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
+              </div>
+              <div class="masonry-item portugal1">
+                <img
+                  src="./images/courses_img/mechanical.png"
+                  alt="portugal1" />
+                <div class="study_card_items">
+                  <p>Mechanical Engineering</p>
+                  <a href="study_destination_details.html">
+                    <button class="study_card_items_button">VIEW</button></a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -254,6 +421,10 @@
     </section>
     <!-- other service section  -->
     <section class="other_service">
+      <img
+        src="./images/background4.png"
+        alt="right background img"
+        class="other_service_right_background" />
       <h2 class="study_head_text">Other Service</h2>
       <div class="other_service_details">
         <div class="card">
@@ -288,7 +459,7 @@
           <p class="card_head_text">Health Insurance</p>
           <p class="card_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            eiusmod tempor.
           </p>
         </div>
         <div class="last-card">
@@ -330,6 +501,14 @@
     </section>
     <!-- footer section -->
     <footer class="footer_section" id="#hero">
+      <img
+        src="./images/background3.png"
+        alt="left background img"
+        class="footer_left_background" />
+      <img
+        src="./images/background4.png"
+        alt="right background img"
+        class="footer_right_background" />
       <img
         src="./images/footerpattern.png"
         alt="right background img"
@@ -420,132 +599,119 @@
               </svg>
             </div>
           </div>
-          <p class="footer-left_p">
-            Don't miss out on the latest updates. Sign up below to stay
-            informed.
-          </p>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Enter Your Email Here..." />
-            <button type="submit" class="subscribe-btn">Submit</button>
-          </form>
-          <p class="subscribe_text">
-            By submitting this form you agree to our
-            <span>Privacy Policy</span>
-            and consent to receiving communication.
-          </p>
-        </div>
-        <div class="footer-right">
           <div class="quick-links">
             <p class="quick_text">Quick Links</p>
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">Study Destination</a></li>
               <li><a href="#">Institutions</a></li>
-              <li><a href="#">Immigration</a></li>
               <li><a href="#">Resources</a></li>
+              <li><a href="#">Study Destination</a></li>
+              <li><a href="#">Immigration</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About Us</a></li>
             </ul>
           </div>
-          <div class="social-links">
-            <p class="contact">Connect With Us</p>
-            <div class="icons">
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_5456_57608)">
-                  <path
-                    d="M18 3.24141C22.8094 3.24141 23.3789 3.2625 25.2703 3.34687C27.0281 3.42422 27.9773 3.71953 28.6102 3.96563C29.4469 4.28906 30.0516 4.68281 30.6773 5.30859C31.3102 5.94141 31.6969 6.53906 32.0203 7.37578C32.2664 8.00859 32.5617 8.96484 32.6391 10.7156C32.7234 12.6141 32.7445 13.1836 32.7445 17.9859C32.7445 22.7953 32.7234 23.3648 32.6391 25.2563C32.5617 27.0141 32.2664 27.9633 32.0203 28.5961C31.6969 29.4328 31.3031 30.0375 30.6773 30.6633C30.0445 31.2961 29.4469 31.6828 28.6102 32.0062C27.9773 32.2523 27.0211 32.5477 25.2703 32.625C23.3719 32.7094 22.8023 32.7305 18 32.7305C13.1906 32.7305 12.6211 32.7094 10.7297 32.625C8.97188 32.5477 8.02266 32.2523 7.38984 32.0062C6.55313 31.6828 5.94844 31.2891 5.32266 30.6633C4.68984 30.0305 4.30312 29.4328 3.97969 28.5961C3.73359 27.9633 3.43828 27.007 3.36094 25.2563C3.27656 23.3578 3.25547 22.7883 3.25547 17.9859C3.25547 13.1766 3.27656 12.607 3.36094 10.7156C3.43828 8.95781 3.73359 8.00859 3.97969 7.37578C4.30312 6.53906 4.69688 5.93437 5.32266 5.30859C5.95547 4.67578 6.55313 4.28906 7.38984 3.96563C8.02266 3.71953 8.97891 3.42422 10.7297 3.34687C12.6211 3.2625 13.1906 3.24141 18 3.24141ZM18 0C13.1133 0 12.5016 0.0210937 10.582 0.105469C8.66953 0.189844 7.35469 0.499219 6.21563 0.942187C5.02734 1.40625 4.02188 2.01797 3.02344 3.02344C2.01797 4.02187 1.40625 5.02734 0.942188 6.20859C0.499219 7.35469 0.189844 8.6625 0.105469 10.575C0.0210938 12.5016 0 13.1133 0 18C0 22.8867 0.0210938 23.4984 0.105469 25.418C0.189844 27.3305 0.499219 28.6453 0.942188 29.7844C1.40625 30.9727 2.01797 31.9781 3.02344 32.9766C4.02188 33.975 5.02734 34.5937 6.20859 35.0508C7.35469 35.4937 8.6625 35.8031 10.575 35.8875C12.4945 35.9719 13.1062 35.993 17.993 35.993C22.8797 35.993 23.4914 35.9719 25.4109 35.8875C27.3234 35.8031 28.6383 35.4937 29.7773 35.0508C30.9586 34.5937 31.9641 33.975 32.9625 32.9766C33.9609 31.9781 34.5797 30.9727 35.0367 29.7914C35.4797 28.6453 35.7891 27.3375 35.8734 25.425C35.9578 23.5055 35.9789 22.8937 35.9789 18.007C35.9789 13.1203 35.9578 12.5086 35.8734 10.5891C35.7891 8.67656 35.4797 7.36172 35.0367 6.22266C34.5938 5.02734 33.982 4.02187 32.9766 3.02344C31.9781 2.025 30.9727 1.40625 29.7914 0.949219C28.6453 0.50625 27.3375 0.196875 25.425 0.1125C23.4984 0.0210938 22.8867 0 18 0Z"
-                    fill="#3D55CC"
-                    fill-opacity="0.9" />
-                  <path
-                    d="M18.0039 8.75781C12.8992 8.75781 8.75781 12.8992 8.75781 18.0039C8.75781 23.1086 12.8992 27.25 18.0039 27.25C23.1086 27.25 27.25 23.1086 27.25 18.0039C27.25 12.8992 23.1086 8.75781 18.0039 8.75781ZM18.0039 24.0016C14.6922 24.0016 12.0062 21.3156 12.0062 18.0039C12.0062 14.6922 14.6922 12.0062 18.0039 12.0062C21.3156 12.0062 24.0016 14.6922 24.0016 18.0039C24.0016 21.3156 21.3156 24.0016 18.0039 24.0016Z"
-                    fill="#3D55CC"
-                    fill-opacity="0.9" />
-                  <path
-                    d="M29.7703 8.39297C29.7703 9.58829 28.8 10.5516 27.6117 10.5516C26.4164 10.5516 25.4531 9.58126 25.4531 8.39297C25.4531 7.19766 26.4234 6.23438 27.6117 6.23438C28.8 6.23438 29.7703 7.20469 29.7703 8.39297Z"
-                    fill="#3D55CC"
-                    fill-opacity="0.9" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_5456_57608">
-                    <rect width="36" height="36" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_5456_57612)">
-                  <path
-                    d="M36 18C36 8.05896 27.941 0 18 0C8.05896 0 0 8.05896 0 18C0 26.4413 5.81184 33.5246 13.6519 35.4701V23.5008H9.94032V18H13.6519V15.6298C13.6519 9.50328 16.4246 6.6636 22.4395 6.6636C23.58 6.6636 25.5478 6.88752 26.3527 7.11072V12.0967C25.9279 12.0521 25.1899 12.0298 24.2734 12.0298C21.3221 12.0298 20.1816 13.1479 20.1816 16.0546V18H26.0611L25.051 23.5008H20.1816V35.8682C29.0945 34.7918 36.0007 27.203 36.0007 18H36Z"
-                    fill="#3D55CC"
-                    fill-opacity="0.9" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_5456_57612">
-                    <rect width="36" height="36" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-              <svg
-                width="37"
-                height="36"
-                viewBox="0 0 37 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_5456_57614)">
-                  <path
-                    d="M34.2687 0H2.73132C2.00693 0 1.31221 0.279986 0.799985 0.778364C0.287764 1.27674 0 1.95269 0 2.6575V33.3425C0 34.0473 0.287764 34.7233 0.799985 35.2216C1.31221 35.72 2.00693 36 2.73132 36H34.2687C34.9931 36 35.6878 35.72 36.2 35.2216C36.7122 34.7233 37 34.0473 37 33.3425V2.6575C37 1.95269 36.7122 1.27674 36.2 0.778364C35.6878 0.279986 34.9931 0 34.2687 0ZM11.0281 30.6675H5.46521V13.475H11.0281V30.6675ZM8.24278 11.0925C7.61177 11.089 6.99595 10.9038 6.47305 10.5601C5.95014 10.2165 5.54359 9.7298 5.30469 9.16153C5.06578 8.59327 5.00525 7.96889 5.13071 7.36718C5.25618 6.76548 5.56203 6.21341 6.00966 5.78067C6.45728 5.34793 7.02663 5.0539 7.64584 4.93569C8.26506 4.81748 8.90638 4.88039 9.48888 5.11648C10.0714 5.35257 10.569 5.75125 10.9188 6.26222C11.2686 6.77319 11.4551 7.37354 11.4546 7.9875C11.4605 8.39855 11.3814 8.80656 11.2218 9.18721C11.0622 9.56785 10.8256 9.91335 10.5258 10.2031C10.2261 10.4929 9.86952 10.7209 9.47728 10.8737C9.08504 11.0265 8.6652 11.1009 8.24278 11.0925ZM31.5322 30.6825H25.9719V21.29C25.9719 18.52 24.7617 17.665 23.1995 17.665C21.5499 17.665 19.9312 18.875 19.9312 21.36V30.6825H14.3683V13.4875H19.7179V15.87H19.7899C20.3269 14.8125 22.2077 13.005 25.0778 13.005C28.1817 13.005 31.5348 14.7975 31.5348 20.0475L31.5322 30.6825Z"
-                    fill="#3D55CC"
-                    fill-opacity="0.9" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_5456_57614">
-                    <rect width="37" height="36" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-              <svg
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        </div>
+        <div class="social-links">
+          <p class="contact">Connect With Us</p>
+          <div class="icons">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_5456_57608)">
                 <path
-                  d="M20.9146 15.588L32.3064 2.25H29.6064L19.7176 13.8307L11.8156 2.25H2.70312L14.6506 19.764L2.70312 33.75H5.40313L15.8476 21.519L24.1929 33.75H33.3054L20.9146 15.588ZM17.2179 19.917L16.0074 18.1732L6.37512 4.2975H10.5219L18.2934 15.4958L19.5039 17.2395L29.6086 31.797H25.4619L17.2179 19.917Z"
+                  d="M18 3.24141C22.8094 3.24141 23.3789 3.2625 25.2703 3.34687C27.0281 3.42422 27.9773 3.71953 28.6102 3.96563C29.4469 4.28906 30.0516 4.68281 30.6773 5.30859C31.3102 5.94141 31.6969 6.53906 32.0203 7.37578C32.2664 8.00859 32.5617 8.96484 32.6391 10.7156C32.7234 12.6141 32.7445 13.1836 32.7445 17.9859C32.7445 22.7953 32.7234 23.3648 32.6391 25.2563C32.5617 27.0141 32.2664 27.9633 32.0203 28.5961C31.6969 29.4328 31.3031 30.0375 30.6773 30.6633C30.0445 31.2961 29.4469 31.6828 28.6102 32.0062C27.9773 32.2523 27.0211 32.5477 25.2703 32.625C23.3719 32.7094 22.8023 32.7305 18 32.7305C13.1906 32.7305 12.6211 32.7094 10.7297 32.625C8.97188 32.5477 8.02266 32.2523 7.38984 32.0062C6.55313 31.6828 5.94844 31.2891 5.32266 30.6633C4.68984 30.0305 4.30312 29.4328 3.97969 28.5961C3.73359 27.9633 3.43828 27.007 3.36094 25.2563C3.27656 23.3578 3.25547 22.7883 3.25547 17.9859C3.25547 13.1766 3.27656 12.607 3.36094 10.7156C3.43828 8.95781 3.73359 8.00859 3.97969 7.37578C4.30312 6.53906 4.69688 5.93437 5.32266 5.30859C5.95547 4.67578 6.55313 4.28906 7.38984 3.96563C8.02266 3.71953 8.97891 3.42422 10.7297 3.34687C12.6211 3.2625 13.1906 3.24141 18 3.24141ZM18 0C13.1133 0 12.5016 0.0210937 10.582 0.105469C8.66953 0.189844 7.35469 0.499219 6.21563 0.942187C5.02734 1.40625 4.02188 2.01797 3.02344 3.02344C2.01797 4.02187 1.40625 5.02734 0.942188 6.20859C0.499219 7.35469 0.189844 8.6625 0.105469 10.575C0.0210938 12.5016 0 13.1133 0 18C0 22.8867 0.0210938 23.4984 0.105469 25.418C0.189844 27.3305 0.499219 28.6453 0.942188 29.7844C1.40625 30.9727 2.01797 31.9781 3.02344 32.9766C4.02188 33.975 5.02734 34.5937 6.20859 35.0508C7.35469 35.4937 8.6625 35.8031 10.575 35.8875C12.4945 35.9719 13.1062 35.993 17.993 35.993C22.8797 35.993 23.4914 35.9719 25.4109 35.8875C27.3234 35.8031 28.6383 35.4937 29.7773 35.0508C30.9586 34.5937 31.9641 33.975 32.9625 32.9766C33.9609 31.9781 34.5797 30.9727 35.0367 29.7914C35.4797 28.6453 35.7891 27.3375 35.8734 25.425C35.9578 23.5055 35.9789 22.8937 35.9789 18.007C35.9789 13.1203 35.9578 12.5086 35.8734 10.5891C35.7891 8.67656 35.4797 7.36172 35.0367 6.22266C34.5938 5.02734 33.982 4.02187 32.9766 3.02344C31.9781 2.025 30.9727 1.40625 29.7914 0.949219C28.6453 0.50625 27.3375 0.196875 25.425 0.1125C23.4984 0.0210938 22.8867 0 18 0Z"
                   fill="#3D55CC"
                   fill-opacity="0.9" />
-              </svg>
-            </div>
+                <path
+                  d="M18.0039 8.75781C12.8992 8.75781 8.75781 12.8992 8.75781 18.0039C8.75781 23.1086 12.8992 27.25 18.0039 27.25C23.1086 27.25 27.25 23.1086 27.25 18.0039C27.25 12.8992 23.1086 8.75781 18.0039 8.75781ZM18.0039 24.0016C14.6922 24.0016 12.0062 21.3156 12.0062 18.0039C12.0062 14.6922 14.6922 12.0062 18.0039 12.0062C21.3156 12.0062 24.0016 14.6922 24.0016 18.0039C24.0016 21.3156 21.3156 24.0016 18.0039 24.0016Z"
+                  fill="#3D55CC"
+                  fill-opacity="0.9" />
+                <path
+                  d="M29.7703 8.39297C29.7703 9.58829 28.8 10.5516 27.6117 10.5516C26.4164 10.5516 25.4531 9.58126 25.4531 8.39297C25.4531 7.19766 26.4234 6.23438 27.6117 6.23438C28.8 6.23438 29.7703 7.20469 29.7703 8.39297Z"
+                  fill="#3D55CC"
+                  fill-opacity="0.9" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5456_57608">
+                  <rect width="36" height="36" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_5456_57612)">
+                <path
+                  d="M36 18C36 8.05896 27.941 0 18 0C8.05896 0 0 8.05896 0 18C0 26.4413 5.81184 33.5246 13.6519 35.4701V23.5008H9.94032V18H13.6519V15.6298C13.6519 9.50328 16.4246 6.6636 22.4395 6.6636C23.58 6.6636 25.5478 6.88752 26.3527 7.11072V12.0967C25.9279 12.0521 25.1899 12.0298 24.2734 12.0298C21.3221 12.0298 20.1816 13.1479 20.1816 16.0546V18H26.0611L25.051 23.5008H20.1816V35.8682C29.0945 34.7918 36.0007 27.203 36.0007 18H36Z"
+                  fill="#3D55CC"
+                  fill-opacity="0.9" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5456_57612">
+                  <rect width="36" height="36" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg
+              width="37"
+              height="36"
+              viewBox="0 0 37 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_5456_57614)">
+                <path
+                  d="M34.2687 0H2.73132C2.00693 0 1.31221 0.279986 0.799985 0.778364C0.287764 1.27674 0 1.95269 0 2.6575V33.3425C0 34.0473 0.287764 34.7233 0.799985 35.2216C1.31221 35.72 2.00693 36 2.73132 36H34.2687C34.9931 36 35.6878 35.72 36.2 35.2216C36.7122 34.7233 37 34.0473 37 33.3425V2.6575C37 1.95269 36.7122 1.27674 36.2 0.778364C35.6878 0.279986 34.9931 0 34.2687 0ZM11.0281 30.6675H5.46521V13.475H11.0281V30.6675ZM8.24278 11.0925C7.61177 11.089 6.99595 10.9038 6.47305 10.5601C5.95014 10.2165 5.54359 9.7298 5.30469 9.16153C5.06578 8.59327 5.00525 7.96889 5.13071 7.36718C5.25618 6.76548 5.56203 6.21341 6.00966 5.78067C6.45728 5.34793 7.02663 5.0539 7.64584 4.93569C8.26506 4.81748 8.90638 4.88039 9.48888 5.11648C10.0714 5.35257 10.569 5.75125 10.9188 6.26222C11.2686 6.77319 11.4551 7.37354 11.4546 7.9875C11.4605 8.39855 11.3814 8.80656 11.2218 9.18721C11.0622 9.56785 10.8256 9.91335 10.5258 10.2031C10.2261 10.4929 9.86952 10.7209 9.47728 10.8737C9.08504 11.0265 8.6652 11.1009 8.24278 11.0925ZM31.5322 30.6825H25.9719V21.29C25.9719 18.52 24.7617 17.665 23.1995 17.665C21.5499 17.665 19.9312 18.875 19.9312 21.36V30.6825H14.3683V13.4875H19.7179V15.87H19.7899C20.3269 14.8125 22.2077 13.005 25.0778 13.005C28.1817 13.005 31.5348 14.7975 31.5348 20.0475L31.5322 30.6825Z"
+                  fill="#3D55CC"
+                  fill-opacity="0.9" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5456_57614">
+                  <rect width="37" height="36" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.9146 15.588L32.3064 2.25H29.6064L19.7176 13.8307L11.8156 2.25H2.70312L14.6506 19.764L2.70312 33.75H5.40313L15.8476 21.519L24.1929 33.75H33.3054L20.9146 15.588ZM17.2179 19.917L16.0074 18.1732L6.37512 4.2975H10.5219L18.2934 15.4958L19.5039 17.2395L29.6086 31.797H25.4619L17.2179 19.917Z"
+                fill="#3D55CC"
+                fill-opacity="0.9" />
+            </svg>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p class="footer_bottom_p">© 2025 Visa to Fly</p>
-        <a href="#" class="scroll-top">
-          <svg
-            width="21"
-            height="28"
-            viewBox="0 0 21 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
-              fill="#3D55CC" />
-          </svg>
-        </a>
+        <div class="footer-bottom-container">
+          <p class="footer_bottom_p">© 2025 Visa to Fly</p>
+          <a href="#" class="scroll-top">
+            <svg
+              width="21"
+              height="28"
+              viewBox="0 0 21 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.332031 10.6457L1.79062 12.1008L9.30041 4.60857L9.30041 27.3359L11.3634 27.3359L11.3634 4.60857L18.8734 12.1008L20.332 10.6457L10.3319 0.669269L0.332031 10.6457Z"
+                fill="#3D55CC" />
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
