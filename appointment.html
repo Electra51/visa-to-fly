@@ -605,12 +605,51 @@
         <li><a href="./#about_section">About Us</a></li>
       </ul>
     </div>
-    <!-- <script src="js/index.js"></script> -->
+
     <script>
       function toggleMobileMenu() {
         const menu = document.getElementById("mobileMenu");
         menu.classList.toggle("open");
       }
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownLinks = document.querySelectorAll(".dropdown-a");
+        dropdownLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parentDropdown = this.parentElement;
+            const dropdownMenu = parentDropdown.querySelector(
+              ".dropdown_menu, .dropdown_menu_list"
+            );
+
+            // close dropdowns
+            document
+              .querySelectorAll(".dropdown_menu, .dropdown_menu_list")
+              .forEach((menu) => {
+                if (menu !== dropdownMenu) {
+                  menu.style.display = "none";
+                }
+              });
+
+            // toggle dropdown
+            if (dropdownMenu.style.display === "flex") {
+              dropdownMenu.style.display = "none";
+            } else {
+              dropdownMenu.style.display = "flex";
+            }
+          });
+        });
+
+        // close dropdown clicking outside
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown")) {
+            document
+              .querySelectorAll(".dropdown_menu, .dropdown_menu_list")
+              .forEach((menu) => {
+                menu.style.display = "none";
+              });
+          }
+        });
+      });
     </script>
   </body>
 </html>
