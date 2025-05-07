@@ -142,7 +142,7 @@
               </div>
             </li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#about_section">About Us</a></li>
           </ul>
           <a href="./appointment.html" style="text-decoration: none">
             <button class="book_btn">Book Appointment</button>
@@ -222,7 +222,6 @@
         </div>
       </nav>
     </header>
-
     <!-- hero section start -->
     <section class="hero" id="hero">
       <img
@@ -302,7 +301,7 @@
       </div>
     </section>
     <!-- study destination start -->
-    <section class="study_destination">
+    <section class="study_destination" id="study_destination">
       <img
         src="./images/background3.png"
         alt="left background img"
@@ -473,7 +472,7 @@
       </div>
     </section>
     <!-- about us section  -->
-    <section class="about_section">
+    <section class="about_section" id="about_section">
       <h2 class="study_head_text">About Us</h2>
       <div class="about_details">
         <div class="about_left">
@@ -520,9 +519,9 @@
         class="bg-footer-pattern" />
       <div class="footer-container">
         <div class="footer-left">
-          <div class="footer_logo">
+          <a href="./" class="footer_logo" id="scrollToTopBtn">
             <img src="./images/footerLogo.png" alt="Visa to Fly Logo" />
-          </div>
+          </a>
           <div class="social-links1">
             <p class="contact">Connect With Us</p>
             <div class="icons">
@@ -607,12 +606,12 @@
           <div class="quick-links">
             <p class="quick_text">Quick Links</p>
             <ul>
-              <li><a href="./">Home</a></li>
-              <li><a href="#">Institutions</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Study Destination</a></li>
-              <li><a href="#">Immigration</a></li>
-              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="#" id="scrollToTopBtn">Home</a></li>
+              <li><a>Institutions</a></li>
+              <li><a>Resources</a></li>
+              <li><a href="#study_destination">Study Destination</a></li>
+              <li><a>Immigration</a></li>
+              <li><a href="./contact.html#contact_section">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -930,8 +929,8 @@
             </div>
           </div>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./#about_section">About Us</a></li>
       </ul>
     </div>
     <!-- <script src="js/index.js"></script> -->
@@ -959,6 +958,15 @@
         const menu = document.getElementById("mobileMenu");
         menu.classList.toggle("open");
       }
+      document
+        .getElementById("scrollToTopBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // prevent default anchor behavior
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
     </script>
   </body>
 </html>
